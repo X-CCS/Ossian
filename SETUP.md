@@ -17,7 +17,6 @@ sudo apt-get install ffmpeg
 ```shell script
 git clone https://github.com/mirfan899/Ossian.git
 cd Ossian
-mkdir data
 mkdir data/audio
 mkdir data/txt
 mkdir test/wav

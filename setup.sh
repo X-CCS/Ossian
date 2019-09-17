@@ -11,17 +11,24 @@ sudo apt-get install automake
 sudo apt-get install ffmpeg
 sudo apt-get update
 
+## Ossian setup
 git clone https://github.com/mirfan899/Ossian.git
 cd Ossian
-mkdir data
 mkdir data/audio
 mkdir data/txt
+mkdir test/wav
 mkdir corpus
 mkdir corpus/cn
 mkdir corpus/cn/speakers
 mkdir corpus/cn/speakers/toy_cn_corpus
 mkdir corpus/cn/speakers/toy_cn_corpus/txt
 mkdir corpus/cn/speakers/toy_cn_corpus/wav
+
+apt install python-virtualenv
+virtualenv -p python2 .mytts
+source ./mytts/bin/activate
+pip install numpy scipy regex argparse lxml scikit-learn regex configobj python-virtualenv
+./scripts/setup_tools.sh mirfan899 Tqveb=Be
 
 apt install python-virtualenv
 virtualenv -p python2 .mytts
