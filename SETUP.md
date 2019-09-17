@@ -20,6 +20,7 @@ cd Ossian
 mkdir data
 mkdir data/audio
 mkdir data/txt
+mkdir test/wav
 mkdir corpus
 mkdir corpus/cn
 mkdir corpus/cn/speakers
